@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>全球生鲜卖家管理后台</title>
+</head>
+<body>
+    <table class = "table" style="margin-top: 50px">
+        <tr>
+            <th rowspan = "4">
+                <img style = "width: 200px; height: 200px" src="/static/image/{{ oneGoods.photo }}">
+            </th>
+            <th>商品编号:</th>
+            <td>{{ oneGoods.goods_id }}</td>
+            <th>商品名称:</th>
+            <td>{{ oneGoods.goods_name }}</td>
+        </tr>
+        <tr>
+            <th>商品原价:</th>
+            <td>{{ oneGoods.goods_price }}</td>
+            <th>商品现价:</th>
+            <td>{{ oneGoods.goods_now_price }}</td>
+        </tr>
+        <tr>
+            <th>商品库存:</th>
+            <td>{{ oneGoods.goods_num }}</td>
+            <th>商品描述:</th>
+            <td>{{ oneGoods.goods_description }}</td>
+        </tr>
+        <tr>
+            <th>发布时间:</th>
+            <td>{{ oneGoods.goods_show_time }}</td>
+            <th>商品内容:</th>
+            <td>{{ oneGoods.goods_content }}</td>
+        </tr>
+    </table>
+</body>
+</html>
