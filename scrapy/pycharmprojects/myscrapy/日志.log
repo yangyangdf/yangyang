@@ -1,0 +1,430 @@
+2019-03-11 08:45:46 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 08:45:46 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 08:45:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myscrapy', 'LOG_FILE': '日志.log', 'NEWSPIDER_MODULE': 'myscrapy.spiders', 'SPIDER_MODULES': ['myscrapy.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}
+2019-03-11 08:45:47 [scrapy.extensions.telnet] INFO: Telnet Password: 959a436ed485b532
+2019-03-11 08:45:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-11 08:45:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-11 08:45:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-11 08:45:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-11 08:45:47 [scrapy.core.engine] INFO: Spider opened
+2019-03-11 08:45:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-11 08:45:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-11 08:45:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/11.html> (referer: None)
+2019-03-11 08:45:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/14.html> (referer: None)
+2019-03-11 08:45:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/15.html> (referer: None)
+2019-03-11 08:45:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/13.html> (referer: None)
+2019-03-11 08:45:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/12.html> (referer: None)
+2019-03-11 08:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/11.html> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\scrapy\spiders\__init__.py", line 90, in parse
+    raise NotImplementedError('{}.parse callback is not defined'.format(self.__class__.__name__))
+NotImplementedError: TongjiSpider.parse callback is not defined
+2019-03-11 08:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/14.html> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\scrapy\spiders\__init__.py", line 90, in parse
+    raise NotImplementedError('{}.parse callback is not defined'.format(self.__class__.__name__))
+NotImplementedError: TongjiSpider.parse callback is not defined
+2019-03-11 08:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/15.html> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\scrapy\spiders\__init__.py", line 90, in parse
+    raise NotImplementedError('{}.parse callback is not defined'.format(self.__class__.__name__))
+NotImplementedError: TongjiSpider.parse callback is not defined
+2019-03-11 08:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/13.html> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\scrapy\spiders\__init__.py", line 90, in parse
+    raise NotImplementedError('{}.parse callback is not defined'.format(self.__class__.__name__))
+NotImplementedError: TongjiSpider.parse callback is not defined
+2019-03-11 08:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2018/12.html> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "c:\users\administrator\appdata\local\programs\python\python36\lib\site-packages\scrapy\spiders\__init__.py", line 90, in parse
+    raise NotImplementedError('{}.parse callback is not defined'.format(self.__class__.__name__))
+NotImplementedError: TongjiSpider.parse callback is not defined
+2019-03-11 08:45:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-11 08:45:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1660,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 9073,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 11, 0, 45, 47, 598644),
+ 'log_count/DEBUG': 5,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 9,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'spider_exceptions/NotImplementedError': 5,
+ 'start_time': datetime.datetime(2019, 3, 11, 0, 45, 47, 346630)}
+2019-03-11 08:45:47 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-11 08:54:54 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 08:54:54 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 13:30:30 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 13:30:30 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 13:31:46 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 13:31:46 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 13:36:26 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 13:36:26 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 13:43:01 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 13:43:01 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:09:56 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:09:56 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:45:42 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:45:42 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:47:09 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:47:09 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:47:42 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:47:42 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:47:56 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:47:56 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:50:55 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:50:55 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:51:22 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:51:22 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 14:52:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 14:52:05 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 15:26:56 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 15:26:56 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 15:26:56 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myscrapy', 'LOG_ENABLED': False, 'LOG_FILE': '日志.log', 'NEWSPIDER_MODULE': 'myscrapy.spiders', 'SPIDER_MODULES': ['myscrapy.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}
+2019-03-11 15:26:56 [scrapy.extensions.telnet] INFO: Telnet Password: 49e1f7c6ddd3b075
+2019-03-11 15:26:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-11 15:26:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-11 15:26:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-11 15:26:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['myscrapy.pipelines.TaochePipeline']
+2019-03-11 15:26:56 [scrapy.core.engine] INFO: Spider opened
+2019-03-11 15:26:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-11 15:26:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
+2019-03-11 15:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/acschnitzer-319/> (referer: None)
+2019-03-11 15:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/abt/> (referer: None)
+2019-03-11 15:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/alpina/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/astonmartin/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/always/> (referer: None)
+2019-03-11 15:26:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/always/>: HTTP status code is not handled or not allowed
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/honda/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bmw/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/buick/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/mercedesbenz/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/peugeot/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bj/> (referer: None)
+2019-03-11 15:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/besturn/> (referer: None)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/acschnitzer-319/?page=1#pagetag> (referer: https://anhui.taoche.com/acschnitzer-319/)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/alfaromeo/> (referer: None)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/abt/?page=1#pagetag> (referer: https://anhui.taoche.com/abt/)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/astonmartin/?page=1#pagetag> (referer: https://anhui.taoche.com/astonmartin/)
+2019-03-11 15:26:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/abt/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:26:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/astonmartin/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/porsche/> (referer: None)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/arcfox-289/> (referer: None)
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/audi/?page=6#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 15:26:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/audi/?page=6>: HTTP status code is not handled or not allowed
+2019-03-11 15:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bjqc/> (referer: None)
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/mercedesbenz/?page=5#pagetag> (referer: https://anhui.taoche.com/mercedesbenz/)
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/beiqihuansu/> (referer: None)
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/bj/?page=1#pagetag> (referer: https://anhui.taoche.com/bj/)
+2019-03-11 15:27:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/bj/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/besturn/?page=1#pagetag> (referer: https://anhui.taoche.com/besturn/)
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/mercedesbenz/?page=4#pagetag> (referer: https://anhui.taoche.com/mercedesbenz/)
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=5#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 15:27:00 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-03-11 15:27:00 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/alfaromeo/?page=1#pagetag> (referer: https://anhui.taoche.com/alfaromeo/)
+2019-03-11 15:27:00 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bydauto/> (referer: None)
+2019-03-11 15:27:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/alfaromeo/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/alpina/?page=1#pagetag> (referer: https://anhui.taoche.com/alpina/)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/shenbao/> (referer: None)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/mercedesbenz/?page=3#pagetag> (referer: https://anhui.taoche.com/mercedesbenz/)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/arcfox-289/?page=1#pagetag> (referer: https://anhui.taoche.com/arcfox-289/)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/beiqihuansu/?page=1#pagetag> (referer: https://anhui.taoche.com/beiqihuansu/)
+2019-03-11 15:27:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/arcfox-289/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:27:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/beiqihuansu/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19022313088.html?source=2808> (referer: https://anhui.taoche.com/mercedesbenz/?page=5)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/bjqc/?page=1#pagetag> (referer: https://anhui.taoche.com/bjqc/)
+2019-03-11 15:27:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19022313088.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19022313088.html?source=2808',
+ 'disp_trans': '3.5L/- -',
+ 'f_pay': '27.90万',
+ 'm_pay': '22833元',
+ 'price': '92.99万',
+ 'reg_tim': '2018年04月',
+ 'sale_city': '合肥',
+ 'tab_mil': '0.30万公里',
+ 'title': '奔驰Sprinter 2009款 奔驰 Sprinter 增配版'}
+2019-03-11 15:27:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/bjqc/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/p-26664844.html?source=2808> (referer: https://anhui.taoche.com/mercedesbenz/?page=5)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/peugeot/?page=1#pagetag> (referer: https://anhui.taoche.com/peugeot/)
+2019-03-11 15:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/porsche/?page=1#pagetag> (referer: https://anhui.taoche.com/porsche/)
+2019-03-11 15:27:01 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2019-03-11 15:27:01 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://anhui.taoche.com/mercedesbenz/?page=2. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-03-11 15:27:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://anhui.taoche.com/mercedesbenz/?page=2#pagetag> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2019-03-11 15:27:01 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://anhui.taoche.com/peugeot/?page=2. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-03-11 15:27:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://anhui.taoche.com/peugeot/?page=2#pagetag> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2019-03-11 15:27:01 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://www.taoche.com/buycar/p-26763315.html?source=2808. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2019-03-11 15:27:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.taoche.com/buycar/p-26763315.html?source=2808> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2019-03-11 15:27:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.taoche.com/buycar/b-dealer19022310830.html?source=2808> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2019-03-11 19:30:29 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: myscrapy)
+2019-03-11 19:30:29 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-7-6.1.7601-SP1
+2019-03-11 19:30:29 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'myscrapy', 'LOG_ENABLED': False, 'LOG_FILE': '日志.log', 'NEWSPIDER_MODULE': 'myscrapy.spiders', 'SPIDER_MODULES': ['myscrapy.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'}
+2019-03-11 19:30:29 [scrapy.extensions.telnet] INFO: Telnet Password: 672c96b8cca49edc
+2019-03-11 19:30:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-11 19:30:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-11 19:30:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-11 19:30:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['myscrapy.pipelines.TaochePipeline']
+2019-03-11 19:30:29 [scrapy.core.engine] INFO: Spider opened
+2019-03-11 19:30:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-11 19:30:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/always/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/arcfox-289/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/alpina/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bmw/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/honda/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/acschnitzer-319/> (referer: None)
+2019-03-11 19:30:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/alpina/>: HTTP status code is not handled or not allowed
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/abt/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/buick/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/astonmartin/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bj/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/peugeot/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bjqc/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bydauto/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/mercedesbenz/> (referer: None)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/arcfox-289/?page=1#pagetag> (referer: https://anhui.taoche.com/arcfox-289/)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/beiqihuansu/> (referer: None)
+2019-03-11 19:30:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/mercedesbenz/>: HTTP status code is not handled or not allowed
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/acschnitzer-319/?page=1#pagetag> (referer: https://anhui.taoche.com/acschnitzer-319/)
+2019-03-11 19:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/abt/?page=1#pagetag> (referer: https://anhui.taoche.com/abt/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/buick/?page=1#pagetag> (referer: https://anhui.taoche.com/buick/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/shenbao/> (referer: None)
+2019-03-11 19:30:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/buick/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/besturn/> (referer: None)
+2019-03-11 19:30:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/besturn/>: HTTP status code is not handled or not allowed
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=6#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/honda/?page=5#pagetag> (referer: https://anhui.taoche.com/honda/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/porsche/> (referer: None)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/peugeot/?page=2#pagetag> (referer: https://anhui.taoche.com/peugeot/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/always/?page=1#pagetag> (referer: https://anhui.taoche.com/always/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bentley/> (referer: None)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (418) <GET https://anhui.taoche.com/beiqihuansu/?page=1#pagetag> (referer: https://anhui.taoche.com/beiqihuansu/)
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bj/?page=1#pagetag> (referer: https://anhui.taoche.com/bj/)
+2019-03-11 19:30:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <418 https://anhui.taoche.com/beiqihuansu/?page=1>: HTTP status code is not handled or not allowed
+2019-03-11 19:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/alfaromeo/> (referer: None)
+2019-03-11 19:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/p-26848969.html?source=2808> (referer: https://anhui.taoche.com/audi/?page=6)
+2019-03-11 19:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/p-26848969.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/p-26848969.html?source=2808',
+ 'disp_trans': '2.0L/CVT无级变速',
+ 'f_pay': None,
+ 'm_pay': None,
+ 'price': '10.36万',
+ 'reg_tim': '2010年06月',
+ 'sale_city': '合肥',
+ 'tab_mil': '9.60万公里',
+ 'title': '奥迪A4L 2010款 2.0TFSI 豪华型'}
+2019-03-11 19:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19011712713.html?source=2808> (referer: https://anhui.taoche.com/bj/?page=1)
+2019-03-11 19:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19011712713.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19011712713.html?source=2808',
+ 'disp_trans': '1.5L/- -',
+ 'f_pay': '2.00万',
+ 'm_pay': '1640元',
+ 'price': '6.68万',
+ 'reg_tim': '2017年10月',
+ 'sale_city': '合肥',
+ 'tab_mil': '2.60万公里',
+ 'title': '宝骏510 2017款 1.5L 自动 豪华版'}
+2019-03-11 19:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=5#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/peugeot/?page=1#pagetag> (referer: https://anhui.taoche.com/peugeot/)
+2019-03-11 19:30:32 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-03-11 19:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/p-26844256.html?source=2808> (referer: https://anhui.taoche.com/honda/?page=5)
+2019-03-11 19:30:32 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/p-26844256.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/p-26844256.html?source=2808',
+ 'disp_trans': '2.0L/自动',
+ 'f_pay': None,
+ 'm_pay': None,
+ 'price': '7.38万',
+ 'reg_tim': '2010年03月',
+ 'sale_city': '合肥',
+ 'tab_mil': '11.00万公里',
+ 'title': '本田CR-V 2010款 都市版自动档 Lxi AT'}
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=4#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19022513427.html?source=2808> (referer: https://anhui.taoche.com/bj/?page=1)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19021912348.html?source=2808> (referer: https://anhui.taoche.com/honda/?page=5)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19022213242.html?source=2808> (referer: https://anhui.taoche.com/peugeot/?page=2)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/alfaromeo/?page=1#pagetag> (referer: https://anhui.taoche.com/alfaromeo/)
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19022513427.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19022513427.html?source=2808',
+ 'disp_trans': '1.8L/半自动',
+ 'f_pay': '1.74万',
+ 'm_pay': '1424元',
+ 'price': '5.80万',
+ 'reg_tim': '2016年12月',
+ 'sale_city': '合肥',
+ 'tab_mil': '2.80万公里',
+ 'title': '宝骏560 2016款 1.8L AMT 豪华版'}
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19021912348.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19021912348.html?source=2808',
+ 'disp_trans': '1.5L/CVT无级变速',
+ 'f_pay': '4.14万',
+ 'm_pay': '3389元',
+ 'price': '13.80万',
+ 'reg_tim': '2018年08月',
+ 'sale_city': '合肥',
+ 'tab_mil': '1.00万公里',
+ 'title': '本田思域 2016款 220TURBO CVT 豪华版'}
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bydauto/?page=1#pagetag> (referer: https://anhui.taoche.com/bydauto/)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/p-26748227.html?source=2808> (referer: https://anhui.taoche.com/audi/?page=6)
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19022213242.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19022213242.html?source=2808',
+ 'disp_trans': '1.6L/手自一体',
+ 'f_pay': '0.53万',
+ 'm_pay': '437元',
+ 'price': '1.78万',
+ 'reg_tim': '2007年04月',
+ 'sale_city': '淮南',
+ 'tab_mil': '14.00万公里',
+ 'title': '标致206 2006款 风尚版1.6L 自动'}
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19012010226.html?source=2808> (referer: https://anhui.taoche.com/bj/?page=1)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=1#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=3#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/p-26748227.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/p-26748227.html?source=2808',
+ 'disp_trans': '2.0L/- -',
+ 'f_pay': None,
+ 'm_pay': None,
+ 'price': '24.50万',
+ 'reg_tim': '2017年12月',
+ 'sale_city': '亳州',
+ 'tab_mil': '4.20万公里',
+ 'title': '奥迪A4L 2018款 30周年版 40 TFSI 进取版'}
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19012010226.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19012010226.html?source=2808',
+ 'disp_trans': '1.5L/手动',
+ 'f_pay': '0.89万',
+ 'm_pay': '732元',
+ 'price': '2.98万',
+ 'reg_tim': '2014年02月',
+ 'sale_city': '合肥',
+ 'tab_mil': '6.00万公里',
+ 'title': '宝骏630 2013款 1.5L 手动 舒适型'}
+2019-03-11 19:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/b-dealer19021813264.html?source=2808> (referer: https://anhui.taoche.com/bj/?page=1)
+2019-03-11 19:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/b-dealer19021813264.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/b-dealer19021813264.html?source=2808',
+ 'disp_trans': '1.8L/- -',
+ 'f_pay': '2.63万',
+ 'm_pay': '2156元',
+ 'price': '8.78万',
+ 'reg_tim': '2018年03月',
+ 'sale_city': '阜阳',
+ 'tab_mil': '0.40万公里',
+ 'title': '宝骏530 2018款 1.8L AMT 豪华版'}
+2019-03-11 19:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/shenbao/?page=1#pagetag> (referer: https://anhui.taoche.com/shenbao/)
+2019-03-11 19:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/bjqc/?page=1#pagetag> (referer: https://anhui.taoche.com/bjqc/)
+2019-03-11 19:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anhui.taoche.com/audi/?page=2#pagetag> (referer: https://anhui.taoche.com/audi/)
+2019-03-11 19:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.taoche.com/buycar/p-26660098.html?source=2808> (referer: https://anhui.taoche.com/audi/?page=6)
+2019-03-11 19:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.taoche.com/buycar/p-26660098.html?source=2808>
+{'detail_url': 'https://www.taoche.com/buycar/p-26660098.html?source=2808',
+ 'disp_trans': '2.0L/CVT无级变速',
+ 'f_pay': None,
+ 'm_pay': None,
+ 'price': '6.00万',
+ 'reg_tim': '2007年03月',
+ 'sale_city': '合肥',
+ 'tab_mil': '12.00万公里',
+ 'title': '奥迪A6L 2007款 2.0T CVT标准型'}
+2019-03-11 19:30:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 17209,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 1852016,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 46,
+ 'downloader/response_status_count/418': 5,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 3, 11, 11, 30, 34, 984189),
+ 'httperror/response_ignored_count': 5,
+ 'httperror/response_ignored_status_count/418': 5,
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 61,
+ 'log_count/INFO': 15,
+ 'request_depth_max': 2,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 476,
+ 'scheduler/enqueued/memory': 476,
+ 'start_time': datetime.datetime(2019, 3, 11, 11, 30, 29, 587880)}
+2019-03-11 19:30:34 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2019-03-11 19:30:35 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
